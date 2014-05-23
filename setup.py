@@ -10,7 +10,7 @@ setup(
   long_description=long_description,
   license="BSD",
   author="Ross Kinder",
-  version="1.0",
+  version="1.1",
   url="http://github.com/crewjam/s3repo",
   package_dir={'': 'src'},
   packages=['s3repo'],
