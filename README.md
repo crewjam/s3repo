@@ -1,4 +1,4 @@
-This is a simple tool to manage Debian repositories in Amazon S3. 
+This is a tool to manage simple Debian repositories in Amazon S3. 
 
 Example:
 
