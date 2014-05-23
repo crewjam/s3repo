@@ -45,7 +45,7 @@ def Main(args=sys.argv[1:]):
 
   def AddMain(repo, options):
     for path in options.path:
-      repo.AddPackage(path)
+      repo.AddPackage(path, remove_old_versions=not options.keep_old)
   sub_parser.set_defaults(function=AddMain)
 
   # `remove` subcommand
