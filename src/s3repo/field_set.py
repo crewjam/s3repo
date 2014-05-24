@@ -3,7 +3,9 @@ class FieldSet(object):
   def __init__(self, str):
     self.fields = []
     for line in str.strip().split("\n"):
-      if not line:
+      if "#" in line:
+        line = line[:line.find("#")]
+      if not line.strip():
         continue
       if line.startswith(" "):
         key, value = self.fields[-1]
